@@ -1,0 +1,136 @@
+
+make train AGENT=qlearning
+--- Starting training for agent: qlearning ---
+Ep 10    | Duration:    0.01s | Avg Score (last 10):  22.70 | Epsilon: 0.9900
+Ep 20    | Duration:    0.02s | Avg Score (last 10):  19.40 | Epsilon: 0.9802
+Ep 30    | Duration:    0.03s | Avg Score (last 10):  18.30 | Epsilon: 0.9704
+Ep 40    | Duration:    0.04s | Avg Score (last 10):  22.50 | Epsilon: 0.9608
+Ep 50    | Duration:    0.05s | Avg Score (last 10):  19.70 | Epsilon: 0.9512
+...
+Ep 3850  | Duration:   32.22s | Avg Score (last 10): 822.20 | Epsilon: 0.0212
+Ep 3860  | Duration:   32.57s | Avg Score (last 10): 976.80 | Epsilon: 0.0210
+Ep 3870  | Duration:   32.89s | Avg Score (last 10): 907.80 | Epsilon: 0.0208
+Ep 3880  | Duration:   33.21s | Avg Score (last 10): 903.30 | Epsilon: 0.0206
+Ep 3890  | Duration:   33.57s | Avg Score (last 10): 1000.00 | Epsilon: 0.0204
+
+#############################################################################
+
+make train AGENT=dqn
+--- Starting training for agent: dqn ---
+DQNAgent is using device: mps
+Ep 10    | Duration:    0.02s | Avg Score (last 10):  18.50 | Epsilon: 0.9950
+Ep 20    | Duration:    0.10s | Avg Score (last 10):  19.50 | Epsilon: 0.9900
+Ep 30    | Duration:    0.81s | Avg Score (last 10):  21.80 | Epsilon: 0.9851
+Ep 40    | Duration:    1.92s | Avg Score (last 10):  17.10 | Epsilon: 0.9802
+Ep 50    | Duration:    3.79s | Avg Score (last 10):  30.10 | Epsilon: 0.9753
+...
+Ep 9960  | Duration: 8801.61s | Avg Score (last 10):  89.00 | Epsilon: 0.0100
+Ep 9970  | Duration: 8803.62s | Avg Score (last 10):  31.00 | Epsilon: 0.0100
+Ep 9980  | Duration: 8805.63s | Avg Score (last 10):  31.40 | Epsilon: 0.0100
+Ep 9990  | Duration: 8809.02s | Avg Score (last 10):  53.10 | Epsilon: 0.0100
+Ep 10000 | Duration: 8815.21s | Avg Score (last 10):  97.40 | Epsilon: 0.0100
+
+#############################################################################
+
+make train AGENT=dqn_target
+--- Starting training for agent: dqn_target ---
+DQNTargetAgent is using device: mps
+Ep 10    | Duration:    0.02s | Avg Score (last 10):  21.10 | Epsilon: 0.9950
+Ep 20    | Duration:    0.09s | Avg Score (last 10):  17.80 | Epsilon: 0.9900
+Ep 30    | Duration:    0.90s | Avg Score (last 10):  20.90 | Epsilon: 0.9851
+Ep 40    | Duration:    2.39s | Avg Score (last 10):  24.70 | Epsilon: 0.9802
+Ep 50    | Duration:    3.56s | Avg Score (last 10):  19.30 | Epsilon: 0.9753
+...
+Ep 7950  | Duration: 6991.97s | Avg Score (last 10):  78.80 | Epsilon: 0.0188
+Ep 7960  | Duration: 7000.63s | Avg Score (last 10): 131.50 | Epsilon: 0.0187
+Ep 7970  | Duration: 7011.34s | Avg Score (last 10): 162.50 | Epsilon: 0.0186
+Ep 7980  | Duration: 7027.26s | Avg Score (last 10): 239.80 | Epsilon: 0.0185
+Ep 7990  | Duration: 7092.11s | Avg Score (last 10): 1000.00 | Epsilon: 0.0184
+
+#############################################################################
+
+make train AGENT=ddqn
+--- Starting training for agent: ddqn ---
+DDQNAgent is using device: mps
+Ep 10    | Duration:    0.52s | Avg Score (last 10):  22.10 | Epsilon: 0.9900
+Ep 20    | Duration:    0.91s | Avg Score (last 10):  20.50 | Epsilon: 0.9802
+Ep 30    | Duration:    1.41s | Avg Score (last 10):  26.00 | Epsilon: 0.9704
+Ep 40    | Duration:    1.74s | Avg Score (last 10):  17.30 | Epsilon: 0.9608
+Ep 50    | Duration:    2.13s | Avg Score (last 10):  19.70 | Epsilon: 0.9512
+...
+Ep 9750  | Duration: 8164.85s | Avg Score (last 10): 164.90 | Epsilon: 0.0100
+Ep 9760  | Duration: 8169.15s | Avg Score (last 10): 164.40 | Epsilon: 0.0100
+Ep 9770  | Duration: 8174.16s | Avg Score (last 10): 189.20 | Epsilon: 0.0100
+Ep 9780  | Duration: 8196.23s | Avg Score (last 10): 846.90 | Epsilon: 0.0100
+Ep 9790  | Duration: 8221.68s | Avg Score (last 10): 1000.00 | Epsilon: 0.0100
+
+#############################################################################
+
+make train AGENT=dueling_ddqn
+--- Starting training for agent: dueling_ddqn ---
+DuelingDDQNAgent is using device: mps
+Ep 10    | Duration:    1.10s | Avg Score (last 10):  25.00 | Epsilon: 0.9900
+Ep 20    | Duration:    1.70s | Avg Score (last 10):  22.50 | Epsilon: 0.9802
+Ep 30    | Duration:    2.57s | Avg Score (last 10):  30.30 | Epsilon: 0.9704
+Ep 40    | Duration:    3.28s | Avg Score (last 10):  24.70 | Epsilon: 0.9608
+Ep 50    | Duration:    4.10s | Avg Score (last 10):  29.70 | Epsilon: 0.9512
+...
+Ep 9960  | Duration: 9437.60s | Avg Score (last 10): 422.10 | Epsilon: 0.0100
+Ep 9970  | Duration: 9451.04s | Avg Score (last 10): 409.80 | Epsilon: 0.0100
+Ep 9980  | Duration: 9466.47s | Avg Score (last 10): 473.40 | Epsilon: 0.0100
+Ep 9990  | Duration: 9476.44s | Avg Score (last 10): 304.90 | Epsilon: 0.0100
+Ep 10000 | Duration: 9488.21s | Avg Score (last 10): 355.40 | Epsilon: 0.0100
+
+
+
+#############################################################################
+
+make train AGENT=reinforce
+--- Starting training for agent: reinforce ---
+ReinforceAgent is using device: mps
+Ep 10    | Duration:    1.85s | Avg Score (last 10):  20.70 | Policy Loss: -0.3956 | Avg Entropy: 0.6639
+Ep 20    | Duration:    2.97s | Avg Score (last 10):  14.60 | Policy Loss: -1.4969 | Avg Entropy: 0.5854
+Ep 30    | Duration:    4.55s | Avg Score (last 10):  24.00 | Policy Loss: -1.4886 | Avg Entropy: 0.6535
+Ep 40    | Duration:    5.54s | Avg Score (last 10):  15.20 | Policy Loss: 2.3473 | Avg Entropy: 0.6308
+Ep 50    | Duration:    6.46s | Avg Score (last 10):  15.70 | Policy Loss: 2.0089 | Avg Entropy: 0.6227
+...
+Ep 370   | Duration:  381.74s | Avg Score (last 10): 781.10 | Policy Loss: -8.4653 | Avg Entropy: 0.5358
+Ep 380   | Duration:  416.40s | Avg Score (last 10): 646.90 | Policy Loss: -9.3758 | Avg Entropy: 0.5564
+Ep 390   | Duration:  446.63s | Avg Score (last 10): 564.90 | Policy Loss: -7.6374 | Avg Entropy: 0.4693
+Ep 400   | Duration:  497.28s | Avg Score (last 10): 973.10 | Policy Loss: -3.6743 | Avg Entropy: 0.5193
+Ep 410   | Duration:  548.89s | Avg Score (last 10): 1000.00 | Policy Loss: -15.8121 | Avg Entropy: 0.5115
+
+#############################################################################
+
+
+make train AGENT=a2c
+--- Starting training for agent: a2c ---
+A2C Agent is using device: mps
+Ep 10    | Duration:    2.76s | Avg Score (last 10):  26.10 | Actor Loss: 0.0084 | Critic Loss: 8.5422
+Ep 20    | Duration:    4.72s | Avg Score (last 10):  26.50 | Actor Loss: -0.0018 | Critic Loss: 15.0944
+Ep 30    | Duration:    5.89s | Avg Score (last 10):  17.40 | Actor Loss: -0.0531 | Critic Loss: 26.1674
+Ep 40    | Duration:    7.27s | Avg Score (last 10):  26.70 | Actor Loss: 0.1648 | Critic Loss: 25.1189
+Ep 50    | Duration:    8.56s | Avg Score (last 10):  20.00 | Actor Loss: 0.1173 | Critic Loss: 29.5162
+...
+Ep 4090  | Duration:  884.88s | Avg Score (last 10): 406.90 | Actor Loss: 0.3149 | Critic Loss: 6924.2349
+Ep 4100  | Duration:  920.83s | Avg Score (last 10): 868.30 | Actor Loss: -0.0208 | Critic Loss: 3923.5300
+Ep 4110  | Duration:  958.10s | Avg Score (last 10): 899.60 | Actor Loss: 0.0219 | Critic Loss: 3965.9211
+Ep 4120  | Duration:  997.76s | Avg Score (last 10): 953.60 | Actor Loss: 0.0383 | Critic Loss: 3871.9282
+Ep 4130  | Duration: 1040.17s | Avg Score (last 10): 1000.00 | Actor Loss: -0.1407 | Critic Loss: 3916.1758
+
+#############################################################################
+
+make train AGENT=ppo
+--- Starting training for agent: ppo ---
+PPO Agent is using device: mps
+Ep 10    | Duration:    4.09s | Avg Score (last 10):  21.80 | Actor Loss: 0.0035 | Critic Loss: 84.3957
+Ep 20    | Duration:    7.13s | Avg Score (last 10):  23.20 | Actor Loss: -0.0067 | Critic Loss: 31.9384
+Ep 30    | Duration:    9.95s | Avg Score (last 10):  19.30 | Actor Loss: 0.0041 | Critic Loss: 36.4491
+Ep 40    | Duration:   12.20s | Avg Score (last 10):  20.90 | Actor Loss: -0.0649 | Critic Loss: 8.0787
+Ep 50    | Duration:   14.78s | Avg Score (last 10):  24.40 | Actor Loss: -0.0435 | Critic Loss: 79.5266
+...
+Ep 640   | Duration:  808.62s | Avg Score (last 10): 270.00 | Actor Loss: -0.0062 | Critic Loss: 801.9824
+Ep 650   | Duration:  834.87s | Avg Score (last 10): 496.30 | Actor Loss: -0.0077 | Critic Loss: 76.9342
+Ep 660   | Duration:  862.53s | Avg Score (last 10): 710.30 | Actor Loss: -0.0039 | Critic Loss: 354.5369
+Ep 670   | Duration:  896.75s | Avg Score (last 10): 775.40 | Actor Loss: 0.0005 | Critic Loss: 33.1412
+Ep 680   | Duration:  933.12s | Avg Score (last 10): 1000.00 | Actor Loss: -0.0002 | Critic Loss: 68.5119

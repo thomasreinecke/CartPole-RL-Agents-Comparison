@@ -1,0 +1,24 @@
+# --- requirements.txt ---
+
+# Core Reinforcement Learning Environment
+gymnasium[classic-control]==0.29.1
+
+# Deep Learning Framework
+torch==2.3.1
+
+# Data Visualization and Utilities
+matplotlib==3.8.4
+numpy==2.2.6
+
+# --- For Jupyter Notebook & Data Analysis ---
+# The kernel that VS Code uses to run notebook cells
+ipykernel==6.29.4
+# Data manipulation library to handle the SQLite data
+pandas==2.2.2
+# Interactive plotting library for beautiful charts
+plotly==5.22.0
+# NEW: The library Plotly needs to render in notebooks
+nbformat==5.10.4
+
+# Testing Framework
+pytest==8.1.1
